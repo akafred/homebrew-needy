@@ -5,13 +5,13 @@
 class Needy < Formula
   desc "AI Agent Coordination System using the Needs Pattern"
   homepage "https://github.com/akafred/needy"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akafred/needy/releases/download/v0.0.3/needy_darwin_amd64.tar.gz"
-      sha256 "01fe8a877bbb8dd1b8de7123c5a4bf5fb455a934da5cb619decbdfc9f98c0a93"
+      url "https://github.com/akafred/needy/releases/download/v0.0.4/needy_darwin_amd64.tar.gz"
+      sha256 "8369c3d7d43f2facf91987d6127c12ae3122596c9ffe3d08258a336d5d7ed8fe"
 
       def install
         bin.install "nd"
@@ -19,8 +19,8 @@ class Needy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/akafred/needy/releases/download/v0.0.3/needy_darwin_arm64.tar.gz"
-      sha256 "ca48bef5b7eba2d39bc22c48bacb1405cc14fee4bb64ae570153afcecabe2fdc"
+      url "https://github.com/akafred/needy/releases/download/v0.0.4/needy_darwin_arm64.tar.gz"
+      sha256 "02dc2a456d080910ae8bf43372146d15398daf03d4a074621e8fa4a3f4507cca"
 
       def install
         bin.install "nd"
@@ -31,16 +31,16 @@ class Needy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akafred/needy/releases/download/v0.0.3/needy_linux_amd64.tar.gz"
-      sha256 "6aba95a3fdf55a3653aa4d57c8a6b1bf2a98c1484ccca1a9df0522aa7d35a8cc"
+      url "https://github.com/akafred/needy/releases/download/v0.0.4/needy_linux_amd64.tar.gz"
+      sha256 "c1679b2c4b1bb21d4f72b349b2f94165110fafa120a1256e2edce15a4dae91ed"
       def install
         bin.install "nd"
         bin.install "ndadm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akafred/needy/releases/download/v0.0.3/needy_linux_arm64.tar.gz"
-      sha256 "d4b62d2557620ab9fc73c5997e1f8d4f4b706f5393f5ae92cd7c04b4d0493f7e"
+      url "https://github.com/akafred/needy/releases/download/v0.0.4/needy_linux_arm64.tar.gz"
+      sha256 "bae0431b347622737d2ed294ba0423bb3e52b9b38829632dc19266a0a37f4862"
       def install
         bin.install "nd"
         bin.install "ndadm"
